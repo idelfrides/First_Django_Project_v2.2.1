@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Django 2.2.1</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="DJANGO, PYTHON, HTML,CSS">
+    <meta name="author" content="IDELFRIDES JORGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <h1>HELLO WORLD! <br> MY NAME IS JORGE. <br><br>
+        This is home template
+    </h1>
+
+    <p><b>Agora são: {{now}}</b></p>
+
+    <!-- jinje -->
+    <ul >
+        {% for trans in transacoes %}
+            {%if trans == "t1" %}
+                <li><b>{{trans}}</b></li>
+            {% else %}
+                <li>{{ trans }}<li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</body>
+</html>
