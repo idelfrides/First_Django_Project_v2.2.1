@@ -22,8 +22,8 @@ from contas.views import home, listagem, nova_transacap, update, delete
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('home/', home),
-    path('', listagem, name='url_listagem'),
+    path('', home),
+    path('listagem/', listagem, name='url_listagem'),
     path('nova/', nova_transacap, name='go2new_trans'),
     path('update/<int:mypk>/', update, name='url_update'),
     path('delete/<int:dpk>/', delete, name='url_delete')
